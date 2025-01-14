@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rifa Online</title>
+    <link rel="stylesheet" href="css/stilo.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Rifa Online</h1>
+    
+    <div class="info">
+      <h3>🎁 Prêmio: iPhone 15 Pro Max</h3>
+      <svg class="prize-image" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+        <rect x="100" y="50" width="200" height="300" rx="20" fill="#1a1a1a"/>
+        <rect x="110" y="60" width="180" height="280" rx="15" fill="#333"/>
+        <circle cx="200" cy="110" r="15" fill="#1a1a1a"/>
+        <rect x="170" y="85" width="60" height="10" rx="5" fill="#1a1a1a"/>
+        <circle cx="160" cy="180" r="30" fill="#1a1a1a"/>
+        <circle cx="160" cy="180" r="25" fill="#444"/>
+        <circle cx="160" cy="180" r="20" fill="#1a1a1a"/>
+        <circle cx="240" cy="180" r="15" fill="#1a1a1a"/>
+        <circle cx="200" cy="180" r="15" fill="#1a1a1a"/>
+        <text x="200" y="350" text-anchor="middle" fill="white" font-size="14">iPhone 15 Pro Max</text>
+      </svg>
+      <p>Valor por número: R$ 10,00</p>
+      <p>Data do sorteio: 31/12/2023</p>
+    </div>
+
+    <div class="pix-info">
+      <h3>💰 Dados para Pagamento PIX</h3>
+      <p><strong>Chave PIX (CPF):</strong> 34965961803</p>
+      <p><strong>Nome:</strong>Marcos de Campos Coutinho</p>
+      <p><strong>Banco:</strong>Santander</p>
+    </div>
+
+    <div class="numbers-grid" id="numbersGrid"></div>
+
+    <form id="rifaForm">
+      <div class="form-group">
+        <label for="name">Nome Completo:</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Telefone:</label>
+        <input type="text" id="phone" required>
+      </div>
+
+      <div class="payment-proof">
+        <label for="pixProof">Comprovante do PIX:</label>
+        <input type="file" id="pixProof" accept="image/*" required>
+        <img id="previewImage" alt="Preview do comprovante">
+      </div>
+
+      <div class="selected-numbers">
+        Números selecionados: <span id="selectedNumbersDisplay"></span>
+      </div>
+
+      <button type="submit">Reservar Números</button>
+    </form>
+  </div>
+  <script src="script/main.js"></script>
+</body>
+</html>
